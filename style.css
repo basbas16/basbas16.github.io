@@ -1,0 +1,145 @@
+:root {
+    --primary: #2c3e50;
+    --secondary: #34495e;
+    --accent: #3498db;
+    --text: #333;
+    --light-bg: #f4f7f6;
+}
+body {
+    font-family:
+        "Inter",
+        -apple-system,
+        sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--light-bg);
+}
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Sidebar Styles */
+aside {
+    background: var(--primary);
+    color: white;
+    padding: 40px 30px;
+}
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+h1 {
+    font-size: 1.8em;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+.subtitle {
+    font-size: 0.9em;
+    color: #bdc3c7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.contact-item {
+    margin-bottom: 15px;
+    font-size: 0.85em;
+}
+.contact-item strong {
+    display: block;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 50px;
+}
+section {
+    margin-bottom: 35px;
+}
+h2 {
+    border-bottom: 2px solid var(--light-bg);
+    padding-bottom: 8px;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.job {
+    margin-bottom: 25px;
+}
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.company {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: var(--primary);
+}
+.date {
+    font-size: 0.85em;
+    color: #7f8c8d;
+    font-style: italic;
+}
+.role {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+.project-title {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 15px;
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 18px;
+    margin-top: 8px;
+}
+li {
+    margin-bottom: 6px;
+    font-size: 0.92em;
+}
+
+.skill-tag {
+    display: inline-block;
+    background: #e1e8ed;
+    color: var(--primary);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin: 0 5px 8px 0;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        margin: 0;
+        border-radius: 0;
+    }
+    aside {
+        padding: 30px;
+    }
+    main {
+        padding: 30px;
+    }
+}
