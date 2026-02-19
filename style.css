@@ -28,6 +28,9 @@ body {
     border-radius: 8px;
     overflow: hidden;
 }
+a {
+    color: white;
+}
 
 /* Sidebar Styles */
 aside {
